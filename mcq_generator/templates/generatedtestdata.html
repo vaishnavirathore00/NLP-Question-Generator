@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generated Test Data</title>
+</head>
+<body>
+    <h1>Generated Test Data</h1>
+
+    <table>
+        <tr>
+            <th>Question</th>
+            <th>Answer</th>
+        </tr>
+        {% for question, answer in cresults %}
+            <tr>
+                <td>{{ question }}</td>
+                <td>{{ answer }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Generator</title>
+</head>
+<body>
+    <h1>Welcome to the Test Generator</h1>
+
+    <form method="post" action="/test_generate">
+        <label for="itext">Enter Text:</label>
+        <textarea name="itext" rows="4" cols="50" required></textarea>
+
+        <label for="test_type">Select Test Type:</label>
+        <select name="test_type" required>
+            <option value="objective">Objective Test</option>
+            <option value="non-objective">Non-Objective Test</option>
+        </select>
+
+        <label for="noq">Number of Questions:</label>
+        <input type="number" name="noq" required>
+
+        <button type="submit">Generate Test</button>
+    </form>
+</body>
+</html>
